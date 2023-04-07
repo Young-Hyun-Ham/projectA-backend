@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str = f"{ENV['secretkey']}"
     ALGORITHM: str = "HS256"
     # 60 minutes * 24 hours * 1 days = 1 days
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 12
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 10
     REFLASH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 1
 
     # Database connection
